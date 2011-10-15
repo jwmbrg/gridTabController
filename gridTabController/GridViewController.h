@@ -1,5 +1,5 @@
 //
-//  JWMM_opensourceViewController.h
+//  GridViewController.h
 //  gridTabController
 //
 //  Created by Jesper Moberg on 2011-10-15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JWMM_opensourceViewController : UIViewController
+@interface GridViewController : UIViewController
 
 @end
