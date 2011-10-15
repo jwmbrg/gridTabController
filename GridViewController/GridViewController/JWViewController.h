@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface JWViewController : UIViewController
+#import "AQGridView.h"
+@interface JWViewController : UIViewController <AQGridViewDelegate,AQGridViewDataSource>
 
 @end
