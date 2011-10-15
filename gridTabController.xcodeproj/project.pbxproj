@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9105882F144982AB00D32DBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9105882E144982AB00D32DBD /* UIKit.framework */; };
+		91058831144982AB00D32DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91058830144982AB00D32DBD /* Foundation.framework */; };
+		91058833144982AB00D32DBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91058832144982AB00D32DBD /* CoreGraphics.framework */; };
+		91058839144982AB00D32DBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91058837144982AB00D32DBD /* InfoPlist.strings */; };
+		9105883B144982AB00D32DBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9105883A144982AB00D32DBD /* main.m */; };
+		9105883F144982AB00D32DBD /* JWMM_opensourceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9105883E144982AB00D32DBD /* JWMM_opensourceAppDelegate.m */; };
+		91058842144982AB00D32DBD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91058840144982AB00D32DBD /* MainStoryboard.storyboard */; };
+		91058845144982AB00D32DBD /* JWMM_opensourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91058844144982AB00D32DBD /* JWMM_opensourceViewController.m */; };
+		9105884D144982AB00D32DBD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9105884C144982AB00D32DBD /* SenTestingKit.framework */; };
+		9105884E144982AB00D32DBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9105882E144982AB00D32DBD /* UIKit.framework */; };
+		9105884F144982AB00D32DBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91058830144982AB00D32DBD /* Foundation.framework */; };
+		91058857144982AB00D32DBD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91058855144982AB00D32DBD /* InfoPlist.strings */; };
+		9105885A144982AB00D32DBD /* gridTabControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91058859144982AB00D32DBD /* gridTabControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91058850144982AB00D32DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91058821144982AB00D32DBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91058829144982AB00D32DBD;
+			remoteInfo = gridTabController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9105882A144982AB00D32DBD /* gridTabController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gridTabController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9105882E144982AB00D32DBD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91058830144982AB00D32DBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91058832144982AB00D32DBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		91058836144982AB00D32DBD /* gridTabController-Info.plist */ = {isa = PBXFileReference; path = "gridTabController-Info.plist"; sourceTree = "<group>"; };
+		91058838144982AB00D32DBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9105883A144982AB00D32DBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9105883C144982AB00D32DBD /* gridTabController-Prefix.pch */ = {isa = PBXFileReference; path = "gridTabController-Prefix.pch"; sourceTree = "<group>"; };
+		9105883D144982AB00D32DBD /* JWMM_opensourceAppDelegate.h */ = {isa = PBXFileReference; path = JWMM_opensourceAppDelegate.h; sourceTree = "<group>"; };
+		9105883E144982AB00D32DBD /* JWMM_opensourceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWMM_opensourceAppDelegate.m; sourceTree = "<group>"; };
+		91058841144982AB00D32DBD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		91058843144982AB00D32DBD /* JWMM_opensourceViewController.h */ = {isa = PBXFileReference; path = JWMM_opensourceViewController.h; sourceTree = "<group>"; };
+		91058844144982AB00D32DBD /* JWMM_opensourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JWMM_opensourceViewController.m; sourceTree = "<group>"; };
+		9105884B144982AB00D32DBD /* gridTabControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gridTabControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9105884C144982AB00D32DBD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		91058854144982AB00D32DBD /* gridTabControllerTests-Info.plist */ = {isa = PBXFileReference; path = "gridTabControllerTests-Info.plist"; sourceTree = "<group>"; };
+		91058856144982AB00D32DBD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91058858144982AB00D32DBD /* gridTabControllerTests.h */ = {isa = PBXFileReference; path = gridTabControllerTests.h; sourceTree = "<group>"; };
+		91058859144982AB00D32DBD /* gridTabControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gridTabControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91058827144982AB00D32DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9105882F144982AB00D32DBD /* UIKit.framework in Frameworks */,
+				91058831144982AB00D32DBD /* Foundation.framework in Frameworks */,
+				91058833144982AB00D32DBD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91058847144982AB00D32DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9105884D144982AB00D32DBD /* SenTestingKit.framework in Frameworks */,
+				9105884E144982AB00D32DBD /* UIKit.framework in Frameworks */,
+				9105884F144982AB00D32DBD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9105881F144982AB00D32DBD = {
+			isa = PBXGroup;
+			children = (
+				91058834144982AB00D32DBD /* gridTabController */,
+				91058852144982AB00D32DBD /* gridTabControllerTests */,
+				9105882D144982AB00D32DBD /* Frameworks */,
+				9105882B144982AB00D32DBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9105882B144982AB00D32DBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9105882A144982AB00D32DBD /* gridTabController.app */,
+				9105884B144982AB00D32DBD /* gridTabControllerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9105882D144982AB00D32DBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9105882E144982AB00D32DBD /* UIKit.framework */,
+				91058830144982AB00D32DBD /* Foundation.framework */,
+				91058832144982AB00D32DBD /* CoreGraphics.framework */,
+				9105884C144982AB00D32DBD /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91058834144982AB00D32DBD /* gridTabController */ = {
+			isa = PBXGroup;
+			children = (
+				9105883D144982AB00D32DBD /* JWMM_opensourceAppDelegate.h */,
+				9105883E144982AB00D32DBD /* JWMM_opensourceAppDelegate.m */,
+				91058840144982AB00D32DBD /* MainStoryboard.storyboard */,
+				91058843144982AB00D32DBD /* JWMM_opensourceViewController.h */,
+				91058844144982AB00D32DBD /* JWMM_opensourceViewController.m */,
+				91058835144982AB00D32DBD /* Supporting Files */,
+			);
+			path = gridTabController;
+			sourceTree = "<group>";
+		};
+		91058835144982AB00D32DBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91058836144982AB00D32DBD /* gridTabController-Info.plist */,
+				91058837144982AB00D32DBD /* InfoPlist.strings */,
+				9105883A144982AB00D32DBD /* main.m */,
+				9105883C144982AB00D32DBD /* gridTabController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91058852144982AB00D32DBD /* gridTabControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				91058858144982AB00D32DBD /* gridTabControllerTests.h */,
+				91058859144982AB00D32DBD /* gridTabControllerTests.m */,
+				91058853144982AB00D32DBD /* Supporting Files */,
+			);
+			path = gridTabControllerTests;
+			sourceTree = "<group>";
+		};
+		91058853144982AB00D32DBD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91058854144982AB00D32DBD /* gridTabControllerTests-Info.plist */,
+				91058855144982AB00D32DBD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91058829144982AB00D32DBD /* gridTabController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9105885D144982AB00D32DBD /* Build configuration list for PBXNativeTarget "gridTabController" */;
+			buildPhases = (
+				91058826144982AB00D32DBD /* Sources */,
+				91058827144982AB00D32DBD /* Frameworks */,
+				91058828144982AB00D32DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gridTabController;
+			productName = gridTabController;
+			productReference = 9105882A144982AB00D32DBD /* gridTabController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9105884A144982AB00D32DBD /* gridTabControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91058860144982AB00D32DBD /* Build configuration list for PBXNativeTarget "gridTabControllerTests" */;
+			buildPhases = (
+				91058846144982AB00D32DBD /* Sources */,
+				91058847144982AB00D32DBD /* Frameworks */,
+				91058848144982AB00D32DBD /* Resources */,
+				91058849144982AB00D32DBD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91058851144982AB00D32DBD /* PBXTargetDependency */,
+			);
+			name = gridTabControllerTests;
+			productName = gridTabControllerTests;
+			productReference = 9105884B144982AB00D32DBD /* gridTabControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91058821144982AB00D32DBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "JWMM Software";
+			};
+			buildConfigurationList = 91058824144982AB00D32DBD /* Build configuration list for PBXProject "gridTabController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9105881F144982AB00D32DBD;
+			productRefGroup = 9105882B144982AB00D32DBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91058829144982AB00D32DBD /* gridTabController */,
+				9105884A144982AB00D32DBD /* gridTabControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91058828144982AB00D32DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91058839144982AB00D32DBD /* InfoPlist.strings in Resources */,
+				91058842144982AB00D32DBD /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91058848144982AB00D32DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91058857144982AB00D32DBD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91058849144982AB00D32DBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91058826144982AB00D32DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9105883B144982AB00D32DBD /* main.m in Sources */,
+				9105883F144982AB00D32DBD /* JWMM_opensourceAppDelegate.m in Sources */,
+				91058845144982AB00D32DBD /* JWMM_opensourceViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91058846144982AB00D32DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9105885A144982AB00D32DBD /* gridTabControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91058851144982AB00D32DBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91058829144982AB00D32DBD /* gridTabController */;
+			targetProxy = 91058850144982AB00D32DBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91058837144982AB00D32DBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91058838144982AB00D32DBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		91058840144982AB00D32DBD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91058841144982AB00D32DBD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		91058855144982AB00D32DBD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91058856144982AB00D32DBD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9105885B144982AB00D32DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9105885C144982AB00D32DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9105885E144982AB00D32DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gridTabController/gridTabController-Prefix.pch";
+				INFOPLIST_FILE = "gridTabController/gridTabController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9105885F144982AB00D32DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gridTabController/gridTabController-Prefix.pch";
+				INFOPLIST_FILE = "gridTabController/gridTabController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		91058861144982AB00D32DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gridTabController.app/gridTabController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gridTabController/gridTabController-Prefix.pch";
+				INFOPLIST_FILE = "gridTabControllerTests/gridTabControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		91058862144982AB00D32DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gridTabController.app/gridTabController";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "gridTabController/gridTabController-Prefix.pch";
+				INFOPLIST_FILE = "gridTabControllerTests/gridTabControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91058824144982AB00D32DBD /* Build configuration list for PBXProject "gridTabController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9105885B144982AB00D32DBD /* Debug */,
+				9105885C144982AB00D32DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9105885D144982AB00D32DBD /* Build configuration list for PBXNativeTarget "gridTabController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9105885E144982AB00D32DBD /* Debug */,
+				9105885F144982AB00D32DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		91058860144982AB00D32DBD /* Build configuration list for PBXNativeTarget "gridTabControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91058861144982AB00D32DBD /* Debug */,
+				91058862144982AB00D32DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91058821144982AB00D32DBD /* Project object */;
+}
