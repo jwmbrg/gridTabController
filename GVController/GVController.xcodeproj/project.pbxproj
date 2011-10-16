@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91AAD3C5144B129900026592 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AAD3C4144B129900026592 /* UIKit.framework */; };
+		91AAD3C7144B129900026592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AAD3C6144B129900026592 /* Foundation.framework */; };
+		91AAD3C9144B129900026592 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AAD3C8144B129900026592 /* CoreGraphics.framework */; };
+		91AAD3CF144B129900026592 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 91AAD3CD144B129900026592 /* InfoPlist.strings */; };
+		91AAD3D1144B129900026592 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3D0144B129900026592 /* main.m */; };
+		91AAD3D5144B129900026592 /* GVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3D4144B129900026592 /* GVAppDelegate.m */; };
+		91AAD3D8144B129900026592 /* GVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3D7144B129900026592 /* GVViewController.m */; };
+		91AAD3DB144B129900026592 /* GVViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AAD3D9144B129900026592 /* GVViewController.xib */; };
+		91AAD3FA144B145000026592 /* AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3E4144B145000026592 /* AQGridView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD3FB144B145000026592 /* AQGridViewAnimatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3E8144B145000026592 /* AQGridViewAnimatorItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD3FC144B145000026592 /* AQGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3EA144B145000026592 /* AQGridViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD3FD144B145000026592 /* AQGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3ED144B145000026592 /* AQGridViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD3FE144B145000026592 /* AQGridViewData.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3EF144B145000026592 /* AQGridViewData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD3FF144B145000026592 /* AQGridViewUpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3F1144B145000026592 /* AQGridViewUpdateInfo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD400144B145000026592 /* AQGridViewUpdateItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3F3144B145000026592 /* AQGridViewUpdateItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD401144B145000026592 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3F5144B145000026592 /* NSIndexSet+AQIndexesOutsideSet.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD402144B145000026592 /* NSIndexSet+AQIsSetContiguous.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3F7144B145000026592 /* NSIndexSet+AQIsSetContiguous.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD403144B145000026592 /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3F9144B145000026592 /* UIColor+AQGridView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		91AAD405144B14CF00026592 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AAD404144B14CF00026592 /* QuartzCore.framework */; };
+		91AAD408144B164600026592 /* GVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD407144B164600026592 /* GVCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91AAD3C0144B129900026592 /* GVController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GVController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91AAD3C4144B129900026592 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91AAD3C6144B129900026592 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91AAD3C8144B129900026592 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		91AAD3CC144B129900026592 /* GVController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GVController-Info.plist"; sourceTree = "<group>"; };
+		91AAD3CE144B129900026592 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		91AAD3D0144B129900026592 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		91AAD3D2144B129900026592 /* GVController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GVController-Prefix.pch"; sourceTree = "<group>"; };
+		91AAD3D3144B129900026592 /* GVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVAppDelegate.h; sourceTree = "<group>"; };
+		91AAD3D4144B129900026592 /* GVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVAppDelegate.m; sourceTree = "<group>"; };
+		91AAD3D6144B129900026592 /* GVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GVViewController.h; sourceTree = "<group>"; };
+		91AAD3D7144B129900026592 /* GVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GVViewController.m; sourceTree = "<group>"; };
+		91AAD3DA144B129900026592 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GVViewController.xib; sourceTree = "<group>"; };
+		91AAD3E3144B145000026592 /* AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridView.h; sourceTree = "<group>"; };
+		91AAD3E4144B145000026592 /* AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridView.m; sourceTree = "<group>"; };
+		91AAD3E5144B145000026592 /* AQGridView+CellLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLayout.h"; sourceTree = "<group>"; };
+		91AAD3E6144B145000026592 /* AQGridView+CellLocationDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridView+CellLocationDelegation.h"; sourceTree = "<group>"; };
+		91AAD3E7144B145000026592 /* AQGridViewAnimatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewAnimatorItem.h; sourceTree = "<group>"; };
+		91AAD3E8144B145000026592 /* AQGridViewAnimatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewAnimatorItem.m; sourceTree = "<group>"; };
+		91AAD3E9144B145000026592 /* AQGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewCell.h; sourceTree = "<group>"; };
+		91AAD3EA144B145000026592 /* AQGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewCell.m; sourceTree = "<group>"; };
+		91AAD3EB144B145000026592 /* AQGridViewCell+AQGridViewCellPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AQGridViewCell+AQGridViewCellPrivate.h"; sourceTree = "<group>"; };
+		91AAD3EC144B145000026592 /* AQGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewController.h; sourceTree = "<group>"; };
+		91AAD3ED144B145000026592 /* AQGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewController.m; sourceTree = "<group>"; };
+		91AAD3EE144B145000026592 /* AQGridViewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewData.h; sourceTree = "<group>"; };
+		91AAD3EF144B145000026592 /* AQGridViewData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewData.m; sourceTree = "<group>"; };
+		91AAD3F0144B145000026592 /* AQGridViewUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateInfo.h; sourceTree = "<group>"; };
+		91AAD3F1144B145000026592 /* AQGridViewUpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateInfo.m; sourceTree = "<group>"; };
+		91AAD3F2144B145000026592 /* AQGridViewUpdateItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AQGridViewUpdateItem.h; sourceTree = "<group>"; };
+		91AAD3F3144B145000026592 /* AQGridViewUpdateItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AQGridViewUpdateItem.m; sourceTree = "<group>"; };
+		91AAD3F4144B145000026592 /* NSIndexSet+AQIndexesOutsideSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIndexesOutsideSet.h"; sourceTree = "<group>"; };
+		91AAD3F5144B145000026592 /* NSIndexSet+AQIndexesOutsideSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIndexesOutsideSet.m"; sourceTree = "<group>"; };
+		91AAD3F6144B145000026592 /* NSIndexSet+AQIsSetContiguous.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+AQIsSetContiguous.h"; sourceTree = "<group>"; };
+		91AAD3F7144B145000026592 /* NSIndexSet+AQIsSetContiguous.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+AQIsSetContiguous.m"; sourceTree = "<group>"; };
+		91AAD3F8144B145000026592 /* UIColor+AQGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AQGridView.h"; sourceTree = "<group>"; };
+		91AAD3F9144B145000026592 /* UIColor+AQGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AQGridView.m"; sourceTree = "<group>"; };
+		91AAD404144B14CF00026592 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		91AAD406144B164600026592 /* GVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVCell.h; sourceTree = "<group>"; };
+		91AAD407144B164600026592 /* GVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91AAD3BD144B129900026592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AAD405144B14CF00026592 /* QuartzCore.framework in Frameworks */,
+				91AAD3C5144B129900026592 /* UIKit.framework in Frameworks */,
+				91AAD3C7144B129900026592 /* Foundation.framework in Frameworks */,
+				91AAD3C9144B129900026592 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91AAD3B5144B129900026592 = {
+			isa = PBXGroup;
+			children = (
+				91AAD404144B14CF00026592 /* QuartzCore.framework */,
+				91AAD3CA144B129900026592 /* GVController */,
+				91AAD3C3144B129900026592 /* Frameworks */,
+				91AAD3C1144B129900026592 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91AAD3C1144B129900026592 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91AAD3C0144B129900026592 /* GVController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91AAD3C3144B129900026592 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91AAD3C4144B129900026592 /* UIKit.framework */,
+				91AAD3C6144B129900026592 /* Foundation.framework */,
+				91AAD3C8144B129900026592 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91AAD3CA144B129900026592 /* GVController */ = {
+			isa = PBXGroup;
+			children = (
+				91AAD3E2144B141500026592 /* AQGrid */,
+				91AAD3E1144B13EB00026592 /* GVControl */,
+				91AAD3D3144B129900026592 /* GVAppDelegate.h */,
+				91AAD3D4144B129900026592 /* GVAppDelegate.m */,
+				91AAD3D6144B129900026592 /* GVViewController.h */,
+				91AAD3D7144B129900026592 /* GVViewController.m */,
+				91AAD3D9144B129900026592 /* GVViewController.xib */,
+				91AAD3CB144B129900026592 /* Supporting Files */,
+			);
+			path = GVController;
+			sourceTree = "<group>";
+		};
+		91AAD3CB144B129900026592 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91AAD3CC144B129900026592 /* GVController-Info.plist */,
+				91AAD3CD144B129900026592 /* InfoPlist.strings */,
+				91AAD3D0144B129900026592 /* main.m */,
+				91AAD3D2144B129900026592 /* GVController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91AAD3E1144B13EB00026592 /* GVControl */ = {
+			isa = PBXGroup;
+			children = (
+				91AAD406144B164600026592 /* GVCell.h */,
+				91AAD407144B164600026592 /* GVCell.m */,
+			);
+			name = GVControl;
+			sourceTree = "<group>";
+		};
+		91AAD3E2144B141500026592 /* AQGrid */ = {
+			isa = PBXGroup;
+			children = (
+				91AAD3E3144B145000026592 /* AQGridView.h */,
+				91AAD3E4144B145000026592 /* AQGridView.m */,
+				91AAD3E5144B145000026592 /* AQGridView+CellLayout.h */,
+				91AAD3E6144B145000026592 /* AQGridView+CellLocationDelegation.h */,
+				91AAD3E7144B145000026592 /* AQGridViewAnimatorItem.h */,
+				91AAD3E8144B145000026592 /* AQGridViewAnimatorItem.m */,
+				91AAD3E9144B145000026592 /* AQGridViewCell.h */,
+				91AAD3EA144B145000026592 /* AQGridViewCell.m */,
+				91AAD3EB144B145000026592 /* AQGridViewCell+AQGridViewCellPrivate.h */,
+				91AAD3EC144B145000026592 /* AQGridViewController.h */,
+				91AAD3ED144B145000026592 /* AQGridViewController.m */,
+				91AAD3EE144B145000026592 /* AQGridViewData.h */,
+				91AAD3EF144B145000026592 /* AQGridViewData.m */,
+				91AAD3F0144B145000026592 /* AQGridViewUpdateInfo.h */,
+				91AAD3F1144B145000026592 /* AQGridViewUpdateInfo.m */,
+				91AAD3F2144B145000026592 /* AQGridViewUpdateItem.h */,
+				91AAD3F3144B145000026592 /* AQGridViewUpdateItem.m */,
+				91AAD3F4144B145000026592 /* NSIndexSet+AQIndexesOutsideSet.h */,
+				91AAD3F5144B145000026592 /* NSIndexSet+AQIndexesOutsideSet.m */,
+				91AAD3F6144B145000026592 /* NSIndexSet+AQIsSetContiguous.h */,
+				91AAD3F7144B145000026592 /* NSIndexSet+AQIsSetContiguous.m */,
+				91AAD3F8144B145000026592 /* UIColor+AQGridView.h */,
+				91AAD3F9144B145000026592 /* UIColor+AQGridView.m */,
+			);
+			name = AQGrid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91AAD3BF144B129900026592 /* GVController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91AAD3DE144B129900026592 /* Build configuration list for PBXNativeTarget "GVController" */;
+			buildPhases = (
+				91AAD3BC144B129900026592 /* Sources */,
+				91AAD3BD144B129900026592 /* Frameworks */,
+				91AAD3BE144B129900026592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GVController;
+			productName = GVController;
+			productReference = 91AAD3C0144B129900026592 /* GVController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91AAD3B7144B129900026592 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "JWMM Software";
+			};
+			buildConfigurationList = 91AAD3BA144B129900026592 /* Build configuration list for PBXProject "GVController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91AAD3B5144B129900026592;
+			productRefGroup = 91AAD3C1144B129900026592 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91AAD3BF144B129900026592 /* GVController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91AAD3BE144B129900026592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AAD3CF144B129900026592 /* InfoPlist.strings in Resources */,
+				91AAD3DB144B129900026592 /* GVViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91AAD3BC144B129900026592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AAD3D1144B129900026592 /* main.m in Sources */,
+				91AAD3D5144B129900026592 /* GVAppDelegate.m in Sources */,
+				91AAD3D8144B129900026592 /* GVViewController.m in Sources */,
+				91AAD3FA144B145000026592 /* AQGridView.m in Sources */,
+				91AAD3FB144B145000026592 /* AQGridViewAnimatorItem.m in Sources */,
+				91AAD3FC144B145000026592 /* AQGridViewCell.m in Sources */,
+				91AAD3FD144B145000026592 /* AQGridViewController.m in Sources */,
+				91AAD3FE144B145000026592 /* AQGridViewData.m in Sources */,
+				91AAD3FF144B145000026592 /* AQGridViewUpdateInfo.m in Sources */,
+				91AAD400144B145000026592 /* AQGridViewUpdateItem.m in Sources */,
+				91AAD401144B145000026592 /* NSIndexSet+AQIndexesOutsideSet.m in Sources */,
+				91AAD402144B145000026592 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
+				91AAD403144B145000026592 /* UIColor+AQGridView.m in Sources */,
+				91AAD408144B164600026592 /* GVCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91AAD3CD144B129900026592 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91AAD3CE144B129900026592 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		91AAD3D9144B129900026592 /* GVViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91AAD3DA144B129900026592 /* en */,
+			);
+			name = GVViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91AAD3DC144B129900026592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		91AAD3DD144B129900026592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91AAD3DF144B129900026592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GVController/GVController-Prefix.pch";
+				INFOPLIST_FILE = "GVController/GVController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		91AAD3E0144B129900026592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GVController/GVController-Prefix.pch";
+				INFOPLIST_FILE = "GVController/GVController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91AAD3BA144B129900026592 /* Build configuration list for PBXProject "GVController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91AAD3DC144B129900026592 /* Debug */,
+				91AAD3DD144B129900026592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91AAD3DE144B129900026592 /* Build configuration list for PBXNativeTarget "GVController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91AAD3DF144B129900026592 /* Debug */,
+				91AAD3E0144B129900026592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91AAD3B7144B129900026592 /* Project object */;
+}

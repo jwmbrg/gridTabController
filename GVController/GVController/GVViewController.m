@@ -1,14 +1,14 @@
 //
-//  JWViewController.m
-//  GridViewController
+//  GVViewController.m
+//  GVController
 //
-//  Created by Jesper Moberg on 2011-10-15.
+//  Created by Jesper Moberg on 2011-10-16.
 //  Copyright (c) 2011 JWMM Software. All rights reserved.
 //
 
-#import "JWViewController.h"
+#import "GVViewController.h"
 
-@implementation JWViewController
+@implementation GVViewController
 
 - (void)didReceiveMemoryWarning
 {
@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self setTitle:@"LOL"];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

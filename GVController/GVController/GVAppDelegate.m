@@ -1,23 +1,34 @@
 //
-//  JWAppDelegate.m
-//  GridViewController
+//  GVAppDelegate.m
+//  GVController
 //
-//  Created by Jesper Moberg on 2011-10-15.
+//  Created by Jesper Moberg on 2011-10-16.
 //  Copyright (c) 2011 JWMM Software. All rights reserved.
 //
 
-#import "JWAppDelegate.h"
+#import "GVAppDelegate.h"
 
-@implementation JWAppDelegate
+#import "GVViewController.h"
+
+@implementation GVAppDelegate
 
 @synthesize window = _window;
+@synthesize viewController = _viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    GVViewController *root= [[GVViewController alloc] initWithNibName:@"GVViewController" bundle:nil];
+    UINavigationController *navControl=[[UINavigationController alloc] initWithRootViewController:root];
+    self.window.rootViewController = self.viewController;
+    self.viewController=navControl;
+    [self.window addSubview:navControl.view];
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
