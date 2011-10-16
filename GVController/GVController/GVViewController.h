@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GVCell.h"
+#import "AQGridViewController.h"
+#import "BViewController.h"
+@interface GVViewController : UIViewController <AQGridViewDelegate,AQGridViewDataSource>{
+    AQGridView* _gridView;
+}
+@property (nonatomic, retain) IBOutlet AQGridView * gridView;
 
-@interface GVViewController : UIViewController
 
 @end

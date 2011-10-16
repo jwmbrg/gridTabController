@@ -27,6 +27,8 @@
 		91AAD403144B145000026592 /* UIColor+AQGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD3F9144B145000026592 /* UIColor+AQGridView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		91AAD405144B14CF00026592 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AAD404144B14CF00026592 /* QuartzCore.framework */; };
 		91AAD408144B164600026592 /* GVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD407144B164600026592 /* GVCell.m */; };
+		91AAD40D144B26D700026592 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AAD40B144B26D700026592 /* BViewController.m */; };
+		91AAD40E144B26D700026592 /* BViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91AAD40C144B26D700026592 /* BViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,9 @@
 		91AAD404144B14CF00026592 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		91AAD406144B164600026592 /* GVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVCell.h; sourceTree = "<group>"; };
 		91AAD407144B164600026592 /* GVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVCell.m; sourceTree = "<group>"; };
+		91AAD40A144B26D700026592 /* BViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		91AAD40B144B26D700026592 /* BViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		91AAD40C144B26D700026592 /* BViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +122,7 @@
 		91AAD3CA144B129900026592 /* GVController */ = {
 			isa = PBXGroup;
 			children = (
-				91AAD3E2144B141500026592 /* AQGrid */,
+				91AAD409144B26C100026592 /* New Group */,
 				91AAD3E1144B13EB00026592 /* GVControl */,
 				91AAD3D3144B129900026592 /* GVAppDelegate.h */,
 				91AAD3D4144B129900026592 /* GVAppDelegate.m */,
@@ -132,6 +137,7 @@
 		91AAD3CB144B129900026592 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				91AAD3E2144B141500026592 /* AQGrid */,
 				91AAD3CC144B129900026592 /* GVController-Info.plist */,
 				91AAD3CD144B129900026592 /* InfoPlist.strings */,
 				91AAD3D0144B129900026592 /* main.m */,
@@ -177,6 +183,16 @@
 				91AAD3F9144B145000026592 /* UIColor+AQGridView.m */,
 			);
 			name = AQGrid;
+			sourceTree = "<group>";
+		};
+		91AAD409144B26C100026592 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				91AAD40A144B26D700026592 /* BViewController.h */,
+				91AAD40B144B26D700026592 /* BViewController.m */,
+				91AAD40C144B26D700026592 /* BViewController.xib */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +248,7 @@
 			files = (
 				91AAD3CF144B129900026592 /* InfoPlist.strings in Resources */,
 				91AAD3DB144B129900026592 /* GVViewController.xib in Resources */,
+				91AAD40E144B26D700026592 /* BViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +273,7 @@
 				91AAD402144B145000026592 /* NSIndexSet+AQIsSetContiguous.m in Sources */,
 				91AAD403144B145000026592 /* UIColor+AQGridView.m in Sources */,
 				91AAD408144B164600026592 /* GVCell.m in Sources */,
+				91AAD40D144B26D700026592 /* BViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

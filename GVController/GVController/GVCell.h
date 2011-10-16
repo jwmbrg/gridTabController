@@ -7,11 +7,13 @@
 //
 
 #import "AQGridViewCell.h"
-
-@interface GVCell : AQGridViewCell
+#import "BViewController.h"
+@interface GVCell : AQGridViewCell{
+    UIViewController *_viewController;
+}
 
 
 -(UIView*) getSnapShot: (CGRect) size;
--(UIViewController*) getRealView;
-
+-(UIViewController*) getRealViewController;
+-(id) initWithFrame: (CGRect) frame reuseIdentifier: (NSString*) identifier andViewController: (BViewController *) viewController;
 @end
