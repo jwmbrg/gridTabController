@@ -97,7 +97,44 @@
 
 - (void) gridView: (AQGridView *) gridView didSelectItemAtIndex: (NSUInteger) index
 {
-    GVCell * cell = (GVCell*)[self.gridView cellForItemAtIndex: index];
+    
+    GVCell * cell = (GVCell *)[self.gridView cellForItemAtIndex: index];
+	CGRect expandFromRect = [cell rectForExpansionStart];
+    UIViewController * controller = [cell getRealViewController];
+    controller.view.frame = self.gridView.frame;
+//	[controller viewWillAppear: NO];
+
+    [UIView setAnimationsEnabled: NO];
+    
+	
+    
+    controller.view.frame=[cell.contentView convertRect: expandFromRect toView: self.view];;
+	[UIView setAnimationsEnabled: YES];
+    
+    
+    
+    
+    
+	//[controller viewDidAppear: NO];
+    
+    [self.navigationController pushViewController:cell.getRealViewController animated:NO];
+    
+    
+    
+    
+	[UIView beginAnimations: @"Expanion" context: NULL];
+	[UIView setAnimationDuration: 1.0];
+//	[cell.getRealViewController.view setBackgroundColor:[UIColor blueColor]];
+	[cell.getRealViewController.view setFrame:CGRectMake(0, 0, 768, 960)];
+    //[_minLilleSubView setFrame:CGRectMake(0, 0, 768,  960)
+    
+    //[self.view setCenter:
+    
+    
+	
+	[UIView commitAnimations];
+
+    /*GVCell * cell = (GVCell*)[self.gridView cellForItemAtIndex: index];
     UIView *toAnimate= cell.getRealViewController.view;
 
     [cell.getRealViewController setWantsFullScreenLayout:NO];
@@ -120,7 +157,7 @@
    // [UIView setAnimationsEnabled: YES];
     
     [UIView commitAnimations];
-  
+  */
     //[self.navigationController pushViewController:cell.getRealViewController animated:NO];
 }
 

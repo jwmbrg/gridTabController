@@ -11,5 +11,6 @@
 @interface BViewController : UIViewController <GVItemProtocol>{
     UILabel* dinMammaLabel;
 }
+
 @property(nonatomic, retain) IBOutlet UILabel *dinMammaLabel;
 @end
