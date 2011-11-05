@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @protocol GVItemProtocol <NSObject>
-
+@required
+-(UIViewController*)  getViewController;
+-(NSString *) getIdentifier;
+@optional
+-(UIView *) getSnapShot: (CGRect ) size;
 @end

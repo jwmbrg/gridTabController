@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface BViewController : UIViewController{
+#import "GVItemProtocol.h"
+@interface BViewController : UIViewController <GVItemProtocol>{
     UILabel* dinMammaLabel;
 }
 @property(nonatomic, retain) IBOutlet UILabel *dinMammaLabel;

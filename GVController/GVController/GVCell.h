@@ -8,12 +8,14 @@
 
 #import "AQGridViewCell.h"
 #import "BViewController.h"
+#import "GVItemProtocol.h"
 @interface GVCell : AQGridViewCell{
-    UIViewController *_viewController;
+    id<GVItemProtocol>  _viewController;
 }
 
 
 -(UIView*) getSnapShot: (CGRect) size;
 -(UIViewController*) getRealViewController;
--(id) initWithFrame: (CGRect) frame reuseIdentifier: (NSString*) identifier andViewController: (BViewController *) viewController;
+-(id) initWithFrame: (CGRect) frame andViewController: (id<GVItemProtocol> ) viewController;
+- (CGRect) rectForExpansionStart;
 @end

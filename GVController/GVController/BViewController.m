@@ -16,6 +16,7 @@
     if (self) {
         // Custom initialization
     }
+    NSLog(@"Inited frame: %@", self.view.frame);
     return self;
 }
 
@@ -33,6 +34,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+
 }
 
 - (void)viewDidUnload
@@ -47,5 +50,15 @@
     // Return YES for supported orientations
 	return YES;
 }
-
+#pragma mark - GVItemProtocl implementations
+-(UIViewController*)  getViewController{
+    
+    return self;
+}/*
+-(UIView *) getSnapShot: (CGRect ) size{
+    return nil;
+}*/
+-(NSString *) getIdentifier{
+    return @"BViewController";
+}
 @end

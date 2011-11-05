@@ -20,12 +20,20 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     GVViewController *root= [[GVViewController alloc] initWithNibName:@"GVViewController" bundle:nil];
+
     UINavigationController *navControl=[[UINavigationController alloc] initWithRootViewController:root];
     self.window.rootViewController = self.viewController;
     self.viewController=navControl;
     [self.window addSubview:navControl.view];
     
     [self.window makeKeyAndVisible];
+    id<GVItemProtocol> lol= [[BViewController alloc] initWithNibName:@"BViewController" bundle:nil] ;
+    [root addGVCell:lol];
+
+    id<GVItemProtocol> lol2= [[BViewController alloc] initWithNibName:@"BViewController" bundle:nil] ;
+    [root addGVCell:lol2];
+
+    
     return YES;
 }
 

@@ -10,24 +10,35 @@
 
 @implementation GVCell
 
--(id) initWithFrame: (CGRect) frame reuseIdentifier: (NSString*) identifier andViewController: (BViewController *) viewController {
-    if(self=[super initWithFrame:frame reuseIdentifier:identifier]){
+-(id) initWithFrame: (CGRect) frame andViewController: (id<GVItemProtocol> ) viewController {
+    if(self=[super initWithFrame:frame reuseIdentifier:[viewController getIdentifier]]){
         _viewController=viewController;
     }
    // [self.contentView setBackgroundColor:[UIColor blueColor]];
     //[selfcontentView addSubview:[self getSnapShot:frame]];
-    NSLog(@"PRINTING HTA LABEL %@",viewController.view);
+  //  NSLog(@"PRINTING HTA LABEL %@",viewController.view);
+    
     [self.contentView addSubview:[self getSnapShot:frame] ];
     return self;
     
 }
--(UIView*) getSnapShot: (CGRect) size{
+-(UIView*) getSnapShot: (CGRect ) size{
     NSLog(@"Generating snapshot");
-    UIView *toReturn=[[UIView alloc] initWithFrame:size];
+    UIView *toReturn=nil;
+    if ([_viewController respondsToSelector:@selector(getSnapShot:)]) {
+        toReturn=[_viewController getSnapShot:size];
+    }else{
+        toReturn=[[UIView alloc]initWithFrame:size];
+    }
+    
     [toReturn setBackgroundColor:[UIColor redColor]];
      return toReturn;
 }
 -(UIViewController*) getRealViewController{
-    return _viewController;
+    return [_viewController getViewController];
+}
+- (CGRect) rectForExpansionStart
+{
+	return (self.contentView.bounds);
 }
 @end
